@@ -37,4 +37,9 @@ public class Converter {
     
     return poundsAndOunces;
   }
+
+  public String toOunces(int pounds, int ounces){
+    int totalOunces = (pounds * OUNCES_PER_POUND) + ounces;
+    return totalOunces + " oz";
+  }
 }
